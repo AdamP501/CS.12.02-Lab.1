@@ -11,7 +11,6 @@ public class StoreTester {
         Store testStore = new Store();
         Book harryPotter = new Book("9780439362139", "2nd", "Harry Potter and the Philosopher's Stone");
         testStore.addBook(harryPotter);
-        testStore.showAllInfo();
 
         assertEquals(1, testStore.getItems("Book").size());
     }
