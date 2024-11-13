@@ -37,7 +37,7 @@ public class Store {
     public ArrayList<CISItem> getItems(String type){
         ArrayList<CISItem> result = new ArrayList<CISItem>();
         for (CISItem item : cisItems){
-            if (item.getClass().getSimpleName().equals(type)){
+            if (item.getClass().getSimpleName().equals(type)){   //if the item is of the inputted type
                 result.add(item);
             }
         }
